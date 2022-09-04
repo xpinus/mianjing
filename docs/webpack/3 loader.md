@@ -2,7 +2,7 @@
 sort: 3
 ---
 
-# 3 Loader
+# Loader
 
 编写一个 loader
 
