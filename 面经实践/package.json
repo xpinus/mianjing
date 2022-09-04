@@ -1,0 +1,15 @@
+{
+	"name": "mianjing-practice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "promises-aplus-tests ./JS/promiseA/MyPromise"
+	},
+	"keywords": [],
+	"dependencies": {
+		"promises-aplus-tests": "^2.1.2"
+	},
+	"author": "xueyunfeng",
+	"license": "ISC"
+}
