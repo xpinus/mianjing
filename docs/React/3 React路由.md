@@ -11,9 +11,9 @@ React 路由是一个构建在 React 之上的强大的路由库，它有助于�
 
 ```jsx
 <switch>
-    <route exact path=’/’ component={Home}/>
-    <route path=’/posts/:id’ component={Newpost}/>
-    <route path=’/posts’   component={Post}/>
+    <route exact path='/' component={Home}/>
+    <route path='/posts/:id' component={Newpost}/>
+    <route path='/posts'   component={Post}/>
 </switch>
 ```
 
@@ -74,7 +74,7 @@ this.props.location.query
 3、state传值方式,和query相似：
 
 ```jsx
-<Route path="/state component={App} />
+<Route path="/state" component={App} />
 
 const toParam ={
     pathname:"/state",

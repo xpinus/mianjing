@@ -10,3 +10,9 @@ sort: 15
 * `href`是Hypertext Reference的缩写，指向网络资源所在位置
   * 建立和当前元素（锚点）或当前文档（链接）之间的链接
   * `<link href="common.css" rel="stylesheet"/>`那么浏览器会识别该文档为`css`文件，就会**并行**下载资源并且不会停止对当前文档的处理。这也是为什么建议使用`link`方式来加载`css`，而不是使用`@import`方式
+
+
+解析遇到link、script、img标签时，浏览器会向服务器发送请求资源。
+script的加载或者执行都会阻塞html解析、其他下载线程以及渲染线程。
+link加载完css后会解析为CSSOM(层叠样式表对象模型,一棵仅含有样式信息的树)。css的加载和解析不会阻塞html的解析，但会阻塞渲染。
+img的加载不会阻塞html的解析，但img加载后并不渲染，它需要等待Render Tree生成完后才和Render Tree一起渲染出来。未下载完的图片需等下载完后才渲染。

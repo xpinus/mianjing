@@ -4,6 +4,8 @@ sort: 20
 
 # 几种常见的 CSS 布局
 
+## 三列布局
+
 - 流体布局
 
 ```html
@@ -111,11 +113,9 @@ sort: 20
 }
 ```
 
-** 左边宽度固定，右边自适应 **
+## 两栏布局，左边宽度固定，右边自适应
 
-> 左侧固定宽度，右侧自适应宽度的两列布局实现
-
-html 结构
+- 左侧固定宽度，右侧自适应宽度的两列布局实现
 
 ```html
 <div class="outer">
@@ -239,3 +239,7 @@ html 结构
 
   - `.container { display:flex; flex-direction:column; }`
   - `.sub { flex:1; }`
+
+## 瀑布流
+
+https://juejin.cn/post/7013650466877898789

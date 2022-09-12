@@ -10,8 +10,9 @@ function Child(name, age) {
 	Parent.call(this, name);
 	this.age = age;
 }
-Child.prototype = Object.create(Parent.prototype); // 记得重点实践比较个方法的区别
-Child.prototype.contructor = Child;
+Child.prototype = Object.create(Parent.prototype);
+// 记得重点实践比较个方法的区别
+// Child.prototype.contructor = Child;
 
 // ES6
 // class Parent {
@@ -33,11 +34,12 @@ Child.prototype.contructor = Child;
 
 // 测试
 let xm = new Child("xiaoming", 12);
-console.log(xm.name); // xiaoming
-console.log(xm.age); // 12
-xm.say();
+// console.log(xm.__proto__.contructor);
+// console.log(xm.name); // xiaoming
+// console.log(xm.age); // 12
+// xm.say();
 
-let xh = new Child("xiaohong", 11);
-console.log(xh.name); // xiaoming
-console.log(xh.age); // 12
-xh.say();
+// let xh = new Child("xiaohong", 11);
+// console.log(xh.name); // xiaoming
+// console.log(xh.age); // 12
+// xh.say();

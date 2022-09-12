@@ -14,3 +14,7 @@ function myInstanceof(left, right) {
 
 const test = "";
 console.log(myInstanceof(test, String));
+
+// 判断是否是对象
+Object.prototype.toString.call([]); // '[object Array]'
+Object.prototype.toString.call({}); // '[object Object]'

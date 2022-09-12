@@ -39,8 +39,6 @@ https://www.word.com#search
   * 不好看
   * 不支持SEO。搜索引擎会直接抛弃#号后面的
 
-
-
 ### history 模式的实现原理
 
 `HTML5 `提供了 `History API` 来实现 URL 的变化。前面的**hashchange，你只能改变#后面的url片段，而history api则给了前端完全的自由**

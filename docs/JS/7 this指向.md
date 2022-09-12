@@ -65,6 +65,10 @@ bar(obj.foo); // 1, 参数传递也是一种隐式赋值，即使传入的是函
 
 我们知道 `call`，`apply`，`bind` 等方法可以改变 `this` 的指向
 
+`apply`: apply接受两个参数，第一个参数是this的指向，第二个参数是函数接受的参数，以数组的形式传入，且当第一个参数为null、undefined的时候，默认指向window(在浏览器中)，使用apply方法改变this指向后原函数会立即执行，且此方法只是临时改变thi指向一次。
+
+`call`: call方法的第一个参数也是this的指向，后面传入的是一个参数列表（注意和apply传参的区别）。当一个参数为null或undefined的时候，表示指向window（在浏览器中），和apply一样，call也只是临时改变一次this指向，并立即执行。
+
 ```js
 // bind 调用后不会执行，而是会返回一个硬绑定的函数，所以通过 bind 可以解决绑定丢失的问题
 var bar = foo.bind(obj);

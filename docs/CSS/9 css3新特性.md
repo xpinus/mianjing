@@ -4,7 +4,6 @@ sort: 9
 
 # css3 有哪些新特性
 
-- 新增选择器 `p:nth-child(n) {color: rgba(255, 0, 0, 0.75)}`
 - 弹性盒模型 `display: flex;`
 - 多列布局 `column-count: 5;`
 - 媒体查询 `@media (max-width: 480px) {.box: {column-count: 1;}}`
@@ -32,7 +31,7 @@ sort: 9
 - `p:last-of-type` 选择属于其父元素的最后 `<p>` 元素的每个`<p>` 元素。
 - `p:only-of-type` 选择属于其父元素唯一的 `<p>`元素的每个 `<p>` 元素。
 - `p:only-child` 选择属于其父元素的唯一子元素的每个 `<p>` 元素。
-- `p:nth-child(2)` 选择属于其父元素的第二个子元素的每个 `<p>` 元素。
+- `p:nth-child(2)` 选择属于其父元素的第二个子元素的每个 `<p>` 元素, `odd` `even`。
 - `:after` 在元素之前添加内容,也可以用来做清除浮动。
 - `:before` 在元素之后添加内容。
 - `:enabled` 已启用的表单元素。
