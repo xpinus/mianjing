@@ -255,7 +255,7 @@ MyPromise.prototype.all = function (promiseList) {
 			MyPromise.resolve(promise).then(
 				function (value) {
 					count++;
-					result[index] = value;
+					result[index] = value; // 放入对应的位置
 					if (count === length) {
 						resolve(result);
 					}

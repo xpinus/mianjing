@@ -34,7 +34,7 @@ Child.prototype = Object.create(Parent.prototype);
 
 // 测试
 let xm = new Child("xiaoming", 12);
-// console.log(xm.__proto__.contructor);
+console.log(xm.contructor);
 // console.log(xm.name); // xiaoming
 // console.log(xm.age); // 12
 // xm.say();

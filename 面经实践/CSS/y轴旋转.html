@@ -6,20 +6,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<style>
-			div {
-				width: 200px;
-				height: 200px;
-				background-color: red;
-
-				margin: 200px 200px;
-
-				/* transition: ry linear 3s ; */
-				animation: mymove 5s infinite;
+			.wrap {
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -75px;
+				margin-left: -75px;
+				transform-style: preserve-3d;
+				animation: spin 3s linear infinite;
 			}
 
-			@keyframes mymove {
+			.coin {
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				top: 0;
+			}
+
+			@keyframes spin {
 				from {
-					transform: rotateY(45deg);
+					transform: rotateY(0deg);
 				}
 				to {
 					transform: rotateY(360deg);
@@ -28,6 +36,62 @@
 		</style>
 	</head>
 	<body>
-		<div></div>
+		<div class="wrap">
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/faceeuro.png"
+				style="transform: translateZ(0px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/faceeuro.png"
+				style="transform: translateZ(1px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/faceeuro.png"
+				style="transform: translateZ(2px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/faceeuro.png"
+				style="transform: translateZ(3px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/faceeuro.png"
+				style="transform: translateZ(4px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/backeuro.png"
+				style="transform: translateZ(5px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/backeuro.png"
+				style="transform: translateZ(6px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/backeuro.png"
+				style="transform: translateZ(7px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/backeuro.png"
+				style="transform: translateZ(8px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/backeuro.png"
+				style="transform: translateZ(9px)"
+			/>
+			<img
+				class="coin"
+				src="https://wow.techbrood.com/uploads/160101/backeuro.png"
+				style="transform: translateZ(10px)"
+			/>
+		</div>
 	</body>
 </html>

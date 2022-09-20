@@ -26,3 +26,9 @@ sort: 34
 **require和import的性能**
 - require 的性能相对于 import 稍低。
 因为 require 是在运行时才引入模块并且还赋值给某个变量，而 import 只需要依据 import 中的接口在编译时引入指定模块所以性能稍高
+
+**require加载流程**
+
+路径分析 - 文件定位 - 编译执行
+
+参考： https://juejin.cn/post/7056968475834581022

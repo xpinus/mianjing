@@ -4,7 +4,7 @@ sort: 12
 
 # ## CSS 权重如何计算
 
-- `！important > id(## | 100) > class( . | 10) > tag(标签 | 1)`
+- `！important > id(## | 100) > class、伪类( . | 10) > tag(标签 | 1) > *(通配符)`
 - 同样的权重，就近
 - 内联样式 > 内部样式 > 外部样式
 - `!important` > 内联样式
