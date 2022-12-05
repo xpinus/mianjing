@@ -1,16 +1,16 @@
 // var id = "Global";
 
 // function fun1() {
-// 	// setTimeout中使用普通函数
+// 	// setTimeout中使用普通函数, setTimeout始终在全局环境window中执行
 // 	setTimeout(function () {
-// 		console.log(this.id);
+// 		console.log("fun1", this.id);
 // 	}, 2000);
 // }
 
 // function fun2() {
 // 	// setTimeout中使用箭头函数
 // 	setTimeout(() => {
-// 		console.log(this.id);
+// 		console.log("fun2", this.id);
 // 	}, 2000);
 // }
 
@@ -36,6 +36,7 @@ function outer(val1, val2) {
 		let argIn = arguments;
 		console.log(argIn); // ②
 		console.log(argOut === argIn); // ③
+		console.log(this);
 	};
 	fun();
 }

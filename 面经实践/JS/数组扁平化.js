@@ -1,6 +1,6 @@
 const arr = [1, [2, 3, [4, [5]]]];
 
-// console.log(arr.flat(3));
+//
 
 function myFlat(arr) {
 	return arr.reduce((pre, cur) => {
@@ -9,3 +9,5 @@ function myFlat(arr) {
 }
 
 console.log(myFlat(arr));
+console.log(arr.flat(Infinity));
+debugger;

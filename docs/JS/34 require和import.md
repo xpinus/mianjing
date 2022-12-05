@@ -4,6 +4,8 @@ sort: 34
 
 # require和import
 
+https://juejin.cn/post/6844904080955932680
+
 `require/exports`
 > 在源文件中更改变量的值，通过 require 引入 counts 的变量，拿到的值始终是初始化的值
 

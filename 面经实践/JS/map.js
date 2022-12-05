@@ -1,7 +1,9 @@
-const arr = [1, 2, 3, undefined, 4, undefined, null];
+const arr = [1, undefined, 3, null, 4];
+arr.length = 8;
+arr[6] = 6;
 
-arr.map((item) => {
-	console.log(item);
-});
+// arr.map((item) => {
+// 	console.log(item);
+// });
 
 arr.forEach((item) => console.log(item));
