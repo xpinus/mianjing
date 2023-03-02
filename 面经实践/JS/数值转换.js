@@ -1,9 +1,9 @@
-// console.log(null + 1); // 1
-// console.log(null + undefined); // NaN
-// console.log(null + []); // null
-console.log(null + [1, 2]); // null
-// console.log(null + {}); // null [object Object]
-// console.log(!null + 1); // 2
+console.log(null + 1); // 1
+console.log(null + undefined); // NaN
+console.log(null + []); // null
+console.log(null + [1, 2]); // null1,2
+console.log(null + {}); // null[object Object]
+console.log(!null + 1); // 2
 
 var a = 3;
 // console.log(a + a++ * ++a); // 18 =   3 * 5 + 3
