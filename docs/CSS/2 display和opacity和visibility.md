@@ -10,8 +10,8 @@ sort: 2
   - 修改常规流中的`display`通产会造成文档重排
   - 读屏器不会读取`display:none`的元素内容
   - 元素仍然在DOM树中，但不会进入渲染树
+  
 - `visibility: hidden`：
-
   - 仍在渲染树中，占据空间，只是内容不可见
   - 继承属性，子孙节点因为继承了`visibility: hidden`因此消失，更改属性可以显示出来
   - 修改`visibility`只会使本元素重绘
@@ -34,4 +34,5 @@ sort: 2
 - `transform: scale(0);` 将一个元素设置为缩放无限小，元素将不可见，元素原来所在的位置将被保留
 - `<div hidden="hidden">` HTML5 属性,效果和`display:none;`相同，但这个属性用于记录一个元素的状态
 - `height: 0;` 将元素高度设为 `0` ，并消除边框
-- `filter: blur(0);` CSS3 属性，将一个元素的模糊度设置为`0`，从而使这个元素“消失”在页面中
+- `filter: opacity(0);` CSS3 属性，将一个元素的模糊度设置为`0`，从而使这个元素“消失”在页面中
+  - opacity不支持ie

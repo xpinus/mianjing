@@ -27,7 +27,7 @@ iframe常用属性:
 **操作iframe内容**
 ```js
 let iframe = document.getElementById('demo');
-let iwindow = iframe.contentWindow; // 获取iframe的window对象
+let iwindow = iframe.contentWindow; // 获取iframe的window对象, 必须要是同源才可以，  a.home.com , b.home.com
 let idoc = iframe.contentDocument; // 获取iframe的document对象
 ```
 
